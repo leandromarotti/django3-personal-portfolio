@@ -16,6 +16,14 @@
 
   <link rel="icon" type="image/png" href="{% static "portfolio/leo.png" %}">
 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet"
+  		href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Leandro Marotti</title>
 </head>
 
@@ -35,18 +43,29 @@
           <li class="nav-item">
             <a class="nav-link" href="{% static "portfolio/My_Resume.pdf" %}">Resume</a>
           </li>
+          &nbsp
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/leandro-marotti-99163b22/" target="_blank">LinkedIn</a>
           </li>
+          &nbsp
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/leandromarotti" target="_blank">GitHub</a>
           </li>
+          &nbsp
           <li class="nav-item">
             <a class="nav-link" href="https://open.spotify.com/artist/3BVv3pjlVbSZicwDiE9LmI?si=SxAck0RtSEy36XBqNscMWA" target="_blank">Spotify</a>
           </li>
+          &nbsp
+          &nbsp
+          <li>
+            <a role="button" href="{% url 'music:my_songs' %}" class="btn btn-success">Music</a>
+          </li>
+          &nbsp
+          &nbsp
           <li>
             <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
           </li>
+          &nbsp
         </ul>
       </div>
     </div>
@@ -60,6 +79,12 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- Load the main script for the player -->
+  <script>
+  var url = "{% url 'music:my_songs' %}"
+  </script>
+  <script src="{% static 'portfolio/main.js' %}"></script>
+
 
 </body>
 
