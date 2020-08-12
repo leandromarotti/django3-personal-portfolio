@@ -51,7 +51,7 @@ clearInterval(updateTimer);
 resetValues();
 
 // Load a new track
-curr_track.src = url;
+curr_track.src = url('{{mymusic.musicfile.url}}');
 curr_track.load();
 
 // Update details of the track
@@ -108,7 +108,7 @@ curr_track.play();
 isPlaying = true;
 
 // Replace icon with the pause icon
-playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-1x"></i>';
+playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-2x"></i>';
 }
 
 function pauseTrack() {
@@ -117,7 +117,7 @@ curr_track.pause();
 isPlaying = false;
 
 // Replace icon with the play icon
-playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-1x"></i>';;
+playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-2x"></i>';;
 }
 
 function nextTrack() {
