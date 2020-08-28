@@ -65,7 +65,9 @@
   <img src="{% static 'portfolio/Me.jpeg' %}" style="width:100%">
     <div class="w3-container w3-white">
       <h4><b>Leandro Marotti</b></h4>
-      <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+      <p>Just me, myself and I, exploring the universe of uknownment.
+        I have a heart of love and a interest of lorem ipsum
+        and mauris neque quam blog. I want to share my world with you.</p>
     </div>
   </div><hr>
 
@@ -74,27 +76,20 @@
     <div class="w3-container w3-padding">
       <h4>Popular Posts</h4>
     </div>
+    {% for blog in blogs %}
     <ul class="w3-ul w3-hoverable w3-white">
       <li class="w3-padding-16">
-        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Lorem</span><br>
-        <span>Sed mattis nunc</span>
+        {% if blog.url %}
+        <a href="{{ blog.url }}"
+          <img src="{{ blog.image.url }}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        </a>
+        {% else %}
+          <img src="{{ blog.image.url }}" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        {% endif %}
+          <span class="w3-large">{{blog.title}}</span><br>
+          <span></span>
       </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Ipsum</span><br>
-        <span>Praes tinci sed</span>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Dorum</span><br>
-        <span>Ultricies congue</span>
-      </li>
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-        <span class="w3-large">Mingsum</span><br>
-        <span>Lorem ipsum dipsum</span>
-      </li>
+      {% endfor %}
     </ul>
   </div>
   <hr>
@@ -126,7 +121,7 @@
   <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
   <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
 
-  <footer class="w3-container w3-dark-gray w3-center w3-margin-top">
+  <footer class="w3-container bg-dark text-white w3-center w3-margin-top">
     <p>Find me on social media:</p>
     <i class="fa fa-github w3-hover-opacity" href="https://github.com/leandromarotti"></i>
     <i class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/leandro.marotti"></i>

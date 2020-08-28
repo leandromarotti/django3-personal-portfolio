@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      <img src="{% static 'portfolio/Album Art 2.png' %}" width="100" heigth="100">
+      <img src="{% static 'portfolio/Album_Art_1.png' %}" width="100" heigth="100">
     </div>
     <div class="col-sm-10">
       <h2>Marotti</h2>
@@ -35,7 +35,8 @@
       <td class="total-duration">00:00</td>
       {% if music.url %}
       <td>
-        <a href="{{music.musicfile.url}}" class="fa fa-play-circle fa-1x" onclick="playpauseTrack()"></a>
+        <a href="{{music.musicfile.url}}">
+          <button class="fa fa-play-circle fa-1x" onclick="playpauseTrack()"></button</a>
       </td>
       {% else %}
       <td>
@@ -48,10 +49,9 @@
 </table>
 
 
-
-<nav class="navbar fixed-bottom navbar-light bg-light">
+<!-- <nav class="navbar fixed-bottom navbar-light bg-light">
   <div class="buttons">
-    <img src="{% static 'portfolio/Album Art 2.png' %}" class="w3-left w3-margin-right" style="width:50px">
+    <img src="{% static 'portfolio/Album_Art_1.png' %}" class="w3-left w3-margin-right" style="width:50px">
     <div class="prev-track" onclick="prevTrack()">
       <i class="fa fa-step-backward fa-2x"></i>
     </div>
@@ -75,6 +75,17 @@
   	<i class="fa fa-volume-up"></i>
   	</div>
   </div>
-</nav>
+</nav>-->
+
+<footer class="w3-container bg-dark text-white w3-center w3-margin-top">
+  <p>Find me on social media:</p>
+  <i class="fa fa-github w3-hover-opacity" href="https://github.com/leandromarotti"></i>
+  <i class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/leandro.marotti"></i>
+  <i class="fa fa-instagram w3-hover-opacity" href=""></i>
+  <i class="fa fa-spotify w3-hover-opacity" href="https://open.spotify.com/artist/3BVv3pjlVbSZicwDiE9LmI"></i>
+  <i class="fa fa-soundcloud w3-hover-opacity" href="https://soundcloud.com/leandro-marotti-915162893"></i>
+  <i class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/LeandroMarotti"></i>
+  <i class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/leandro-marotti-99163b22/"></i>
+</footer>
 
 {% endblock %}

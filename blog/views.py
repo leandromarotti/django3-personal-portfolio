@@ -4,8 +4,8 @@ from .models import Blog
 
 # Create your views here.
 def all_blogs(request):
-    #blogs = Blog.objects.order_by('-date')[:5] show the last five blogs
-    blogs = Blog.objects.all()
+    blogs = Blog.objects.order_by('date')[:5] #(-date)show the last five blogs
+    #blogs = Blog.objects.all()
     return render(request, 'blog/all_blogs.html', {'blogs':blogs})
 
 def detail(request, blog_id):
