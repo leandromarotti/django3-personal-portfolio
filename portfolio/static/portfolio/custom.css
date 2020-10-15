@@ -1,164 +1,33 @@
+html,body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Roboto", sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+}
+
 .navbar-nav .nav-link {
     color: rgba(0,0,0,1) !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(0,0,5,.5) !important;
+    /* color: rgba(0,0,5,.5) !important; */
+    color: #28df99;
+}
+
+.nav-item {
+  padding: 0 20px 0 20px;
 }
 
 #topNav {
-  background-color: ;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: ;
-    /* Smoothly transition the background color */
-    transition: background-color .5s;
 }
 
 #blogtitle {
-    font-size: 6rem;
+    font-size: 5rem;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     #hometext {
         font-size: 4rem;
     }
     #blogdetailtitle {
         font-size: 5rem;
     }
-}
-
-/* Using flex with the column direction to
-align items in a vertical direction */
-.player {
-height: 400px;
-display: flex;
-align-items: center;
-flex-direction: row;
-justify-content: center;
-}
-
-.details {
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-margin-top: 0px;
-}
-
-.track-art {
-margin: 25px;
-height: 120px;
-width: 120px;
-background-image: ;
-background-size: cover;
-background-position: center;
-border-radius: 15%;
-}
-
-/* Changing the font sizes to suitable ones */
-.now-playing {
-font-size: 1rem;
-}
-
-.track-name {
-font-size: 2.0rem;
-}
-
-.track-artist {
-font-size: 1.5rem;
-}
-
-/* Using flex with the row direction to
-align items in a horizontal direction */
-.buttons {
-display: flex;
-flex-direction: row;
-align-items: center;
-}
-
-.playpause-track,
-.prev-track,
-.next-track {
-padding: 25px;
-opacity: 0.8;
-
-/* Smoothly transition the opacity */
-transition: opacity .2s;
-}
-
-/* Change the opacity when mouse is hovered */
-.playpause-track:hover,
-.prev-track:hover,
-.next-track:hover {
-opacity: 1.0;
-}
-
-/* Define the slider width so that it scales properly */
-.slider_container {
-width: 75%;
-max-width: 400px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-/* Modify the appearance of the slider */
-.seek_slider, .volume_slider {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-height: 5px;
-background: black;
-opacity: 0.7;
--webkit-transition: .2s;
-transition: opacity .2s;
-}
-
-/* Modify the appearance of the slider thumb */
-.seek_slider::-webkit-slider-thumb,
-.volume_slider::-webkit-slider-thumb {
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-width: 15px;
-height: 15px;
-background: white;
-cursor: pointer;
-border-radius: 50%;
-}
-
-/* Change the opacity when mouse is hovered */
-.seek_slider:hover,
-.volume_slider:hover {
-opacity: 1.0;
-}
-
-.seek_slider {
-width: 60%;
-}
-
-.volume_slider {
-width: 30%;
-}
-
-.current-time,
-.total-duration {
-padding: 10px;
-}
-
-i.fa-volume-down,
-i.fa-volume-up {
-padding: 10px;
-}
-
-/* Change the mouse cursor to a pointer
-when hovered over */
-i.fa-play-circle,
-i.fa-pause-circle,
-i.fa-step-forward,
-i.fa-step-backward {
-cursor: pointer;
-}
+} */

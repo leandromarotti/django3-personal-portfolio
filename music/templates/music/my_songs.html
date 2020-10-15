@@ -42,50 +42,11 @@
       <td>
         <a href="{{music.musicfile.url}}" class="fa fa-play-circle fa-1x" onclick="playpauseTrack()"></a>
       </td>
-      {% endif%}
+      {% endif %}
     </tr>
     {% endfor %}
   </tbody>
 </table>
 
-
-<!-- <nav class="navbar fixed-bottom navbar-light bg-light">
-  <div class="buttons">
-    <img src="{% static 'portfolio/Album_Art_1.png' %}" class="w3-left w3-margin-right" style="width:50px">
-    <div class="prev-track" onclick="prevTrack()">
-      <i class="fa fa-step-backward fa-2x"></i>
-    </div>
-    <div class="playpause-track" onclick="playpauseTrack()">
-      <i class="fa fa-play-circle fa-2x"></i>
-    </div>
-    <div class="next-track" onclick="nextTrack()">
-    	<i class="fa fa-step-forward fa-2x"></i>
-    </div>
-    <div class="slider_container">
-  	<div class="current-time">00:00</div>
-  	<input type="range" min="1" max="100"
-      value="0" class="seek_slider" onchange="seekTo()">
-  	<div class="total-duration">00:00</div>
-  	</div>
-
-  	<div class="slider_container">
-  	<i class="fa fa-volume-down"></i>
-  	<input type="range" min="1" max="100"
-  		value="99" class="volume_slider" onchange="setVolume()">
-  	<i class="fa fa-volume-up"></i>
-  	</div>
-  </div>
-</nav>-->
-
-<footer class="w3-container bg-dark text-white w3-center w3-margin-top">
-  <p>Find me on social media:</p>
-  <i class="fa fa-github w3-hover-opacity" href="https://github.com/leandromarotti"></i>
-  <i class="fa fa-facebook-official w3-hover-opacity" href="https://www.facebook.com/leandro.marotti"></i>
-  <i class="fa fa-instagram w3-hover-opacity" href=""></i>
-  <i class="fa fa-spotify w3-hover-opacity" href="https://open.spotify.com/artist/3BVv3pjlVbSZicwDiE9LmI"></i>
-  <i class="fa fa-soundcloud w3-hover-opacity" href="https://soundcloud.com/leandro-marotti-915162893"></i>
-  <i class="fa fa-twitter w3-hover-opacity" href="https://twitter.com/LeandroMarotti"></i>
-  <i class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/leandro-marotti-99163b22/"></i>
-</footer>
 
 {% endblock %}
